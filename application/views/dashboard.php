@@ -15,6 +15,9 @@
                 <span>URL:</span> <input type="text" name="url" id="url"/> <input type="submit" value="GO!">
             </form>
             <br />
+            <?php
+            if( isset($results) ) {
+            ?>
             <table>
                 <thead>
                     <tr>
@@ -55,6 +58,7 @@
                     ?>
                 </thead>
             </table>
+            <?php } ?>
         </div>
     </body>
 </html>
